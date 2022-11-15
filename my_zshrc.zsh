@@ -1,3 +1,5 @@
+# import this file with `[ -f ~/dotfiles/my_zshrc.zsh ] && source ~/dotfiles/my_zshrc.zsh` in your ~/.zshrc
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export NVM_DIR="$HOME/.nvm"
