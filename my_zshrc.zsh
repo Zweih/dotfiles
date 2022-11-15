@@ -28,6 +28,18 @@ checkout_branch() {
   git checkout $1
 }
 
+commit_with_message() {
+  git commit -m "$1"
+}
+
+add_all_files() {
+  git add .
+}
+
+source_zshrc() {
+  source ~/.zshrc
+}
+
 cheat_sheet() {
   [ -f ~/dotfiles/aliases.zsh ] && cat ~/dotfiles/aliases.zsh
 }
