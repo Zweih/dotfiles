@@ -28,6 +28,10 @@ checkout_branch() {
   git checkout $1
 }
 
+cheat_sheet() {
+  [ -f ~/dotfiles/aliases.zsh] && cat ~/dotfiles/aliases.zsh
+}
+
 # aliases
 [ -f ~/dotfiles/aliases.zsh ] && source ~/dotfiles/aliases.zsh
 
