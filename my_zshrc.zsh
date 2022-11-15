@@ -3,9 +3,14 @@
 # Environment variables
 [ -f ~/dotfiles/environment_exports.zsh ] && source ~/dotfiles/environment_exports.zsh
 
+
 # git functions
 get_current_branch() {
   git branch | grep \* | cut -d ' ' -f2
+}
+
+push_current_branch() {
+  git push origin $(get_current_branch)
 }
 
 fetch_origin_and_pull() {
