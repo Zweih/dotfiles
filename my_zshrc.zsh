@@ -24,6 +24,10 @@ checkout_previous_branch() {
   git checkout -
 }
 
+checkout_branch() {
+  git checkout $1
+}
+
 # aliases
 [ -f ~/dotfiles/aliases.zsh ] && source ~/dotfiles/aliases.zsh
 
