@@ -1,6 +1,7 @@
 # git aliases
 alias fop="fetch_origin_and_pull"
 alias mainster="get_main_or_master"
+alias gcb="get_current_branch"
 alias cmm="checkout_main_or_master"
 alias cbc="create_branch_and_checkout"
 alias cpb="checkout_previous_branch"
