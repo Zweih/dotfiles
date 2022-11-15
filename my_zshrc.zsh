@@ -65,7 +65,7 @@ color_text () {
 }
 
 my_username () {
-  echo $(color_text red "[pxy]")
+  echo $(color_text magenta "{")$(color_text red pxy)$(color_text magenta "}")
 }
 
 my_date() {
@@ -73,7 +73,11 @@ my_date() {
 }
 
 my_dir() {
-  echo $(color_text blue "[%1~]")
+  echo $(color_text blue "ᄽ%1~ᄿ")
+}
+
+my_prompt_symbol() {
+  echo $(color_text magenta "𐂂   ")
 }
 
 setopt PROMPT_SUBST
@@ -86,11 +90,11 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git:*' formats '%b '
+zstyle ':vcs_info:git:*' formats '%b'
 
 my_vcs_info() {
-  echo $(color_text magenta ${vcs_info_msg_0_})
+  echo $(color_text red "[")$(color_text magenta ${vcs_info_msg_0_})$(color_text red "] ")
 }
 
-PROMPT='$(my_username) $(my_date) $(my_dir) $(my_vcs_info)~> '
+PROMPT='$(my_username) $(my_date) $(my_dir) $(my_vcs_info)$(my_prompt_symbol) '
 
