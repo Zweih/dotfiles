@@ -29,7 +29,7 @@ checkout_branch() {
 }
 
 cheat_sheet() {
-  [ -f ~/dotfiles/aliases.zsh] && cat ~/dotfiles/aliases.zsh
+  [ -f ~/dotfiles/aliases.zsh ] && cat ~/dotfiles/aliases.zsh
 }
 
 # aliases
