@@ -79,6 +79,10 @@ my_prompt_symbol() {
   echo $(color_text magenta "𐂂   ")
 }
 
+seperator() {
+  echo $(color_text cyan ">")
+}
+
 setopt PROMPT_SUBST
 
 # Load colors
@@ -95,5 +99,5 @@ my_vcs_info() {
   echo $(color_text red "[")$(color_text magenta ${vcs_info_msg_0_})$(color_text red "] ")
 }
 
-PROMPT='$(my_username) $(my_date) $(my_dir) $(my_vcs_info)$(my_prompt_symbol) '
+PROMPT='$(my_username)$(seperator)$(my_date)$(seperator)$(my_dir)$(seperator)$(my_vcs_info)$(my_prompt_symbol)$(seperator)'
 
