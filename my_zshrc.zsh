@@ -1,13 +1,7 @@
 # import this file with `[ -f ~/dotfiles/my_zshrc.zsh ] && source ~/dotfiles/my_zshrc.zsh` in your ~/.zshrc
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# work aliases
-[ -f ~/work_dotfiles/aliases.zsh ] && source ~/work_dotfiles/aliases.zsh
+# Environment variables
+[ -f ~/dotfiles/environment_exports.zsh ] && source ~/dotfiles/environment_exports.zsh
 
 # git functions
 fetch_origin_and_pull() {
@@ -30,16 +24,8 @@ checkout_previous_branch() {
   git checkout -
 }
 
-# git aliases
-alias fop="fetch_origin_and_pull"
-alias mainster="get_main_or_master"
-alias cmm="checkout_main_or_master"
-alias cbc="create_branch_and_checkout"
-alias cpb="checkout_previous_branch"
-
-# GOPATH aliases
-export GOPATH=$(go env GOPATH)
-export PATH=$PATH:$(go env GOPATH)/bin
+# aliases
+[ -f ~/dotfiles/aliases.zsh ] && source ~/dotfiles/aliases.zsh
 
 date_am_pm_with_secs() {
   date +'%r'
