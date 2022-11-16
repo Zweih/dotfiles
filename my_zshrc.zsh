@@ -68,7 +68,7 @@ my_username () {
 }
 
 my_date() {
-  echo $(color_text green $(date_am_pm_with_secs))
+  echo $(color_text green "$(date_am_pm_with_secs)")
 }
 
 my_dir() {
