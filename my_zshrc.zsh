@@ -20,6 +20,10 @@ get_main_or_master() {
   awk -F "/" '{print $NF}' .git/refs/remotes/origin/HEAD
 }
 
+merge_main_or_master() {
+  git merge $(get_main_or_master)
+}
+
 checkout_main_or_master() {
   git checkout $(get_main_or_master)
 }
