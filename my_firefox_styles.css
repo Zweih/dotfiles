@@ -1,0 +1,16 @@
+#TabsToolbar {
+  visibility: collapse;
+}
+
+#sidebar-header {
+  visibility: collapse !important;
+}
+
+.browserContainer > findbar {
+  -moz-box-ordinal-group: 0;
+}
+
+html {
+  color: white;
+  background-color: black;
+}
