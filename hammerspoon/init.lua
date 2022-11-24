@@ -1,5 +1,6 @@
 local usb = require "usb"
 
+hs.ipc.cliInstall()
 usb.init()
 
 -- Move to previous tab
