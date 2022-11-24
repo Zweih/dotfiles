@@ -32,7 +32,7 @@ local watchedEvents = {{
     productName = "UHK 60 v2",
     vendorID = 7504,
     fn = function()
-        os.execute("osascript ~/dotfiles/turnonkeyboardbacklight.scpt")
+        os.execute("osascript ~/dotfiles/applescript/turnonkeyboardbacklight.scpt")
     end
 }, {
     eventType = "added",
@@ -40,7 +40,7 @@ local watchedEvents = {{
     productName = "UHK 60 v2",
     vendorID = 7504,
     fn = function()
-        os.execute("osascript ~/dotfiles/turnoffkeyboardbacklight.scpt")
+        os.execute("osascript ~/dotfiles/applescript/turnoffkeyboardbacklight.scpt")
     end
 }}
 
