@@ -33,7 +33,7 @@ local watchedEvents = {{
     vendorID = 7504,
     fn = function()
         os.execute("defaults write com.apple.loginwindow DisableScreenLockImmediate -bool no")
-        os.execute("osascript ~/dotfiles/applescript/turnonkeyboardbacklight.scpt")
+        os.execute("osascript ~/dotfiles/applescript/turnonkeyboardbacklight_easier.scpt")
     end
 }, {
     eventType = "added",
@@ -42,7 +42,7 @@ local watchedEvents = {{
     vendorID = 7504,
     fn = function()
         os.execute("defaults write com.apple.loginwindow DisableScreenLockImmediate -bool yes")
-        os.execute("osascript ~/dotfiles/applescript/turnoffkeyboardbacklight.scpt")
+        os.execute("osascript ~/dotfiles/applescript/turnoffkeyboardbacklight_easier.scpt")
     end
 }}
 
