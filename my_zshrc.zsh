@@ -11,11 +11,11 @@ source_zshrc() {
 }
 
 cheat_sheet() {
-  [ -f ~/dotfiles/aliases.zsh ] && cat ~/dotfiles/aliases.zsh
+  [ -f ~/dotfiles/aliases.sh ] && cat ~/dotfiles/aliases.sh
 }
 
 # aliases
-[ -f ~/dotfiles/aliases.zsh ] && source ~/dotfiles/aliases.zsh
+[ -f ~/dotfiles/aliases.sh ] && source ~/dotfiles/aliases.sh
 
 date_am_pm_with_secs() {
   date +'%r'
@@ -58,3 +58,15 @@ my_vcs_info() {
 }
 
 PROMPT='$(my_username) $(my_date) $(my_dir) $(my_vcs_info)$(my_prompt_symbol) '
+
+disable_lockbutton() {
+  defaults write com.apple.loginwindow DisableScreenLockImmediate -bool yes
+}
+
+enable_lockbutton() {
+  defaults write com.apple.loginwindow DisableScreenLockImmediate -bool no
+}
+
+sleep_now() {
+  pmset displaysleepnow
+}

@@ -32,6 +32,7 @@ local watchedEvents = {{
     productName = "UHK 60 v2",
     vendorID = 7504,
     fn = function()
+        os.execute("defaults write com.apple.loginwindow DisableScreenLockImmediate -bool no")
         os.execute("osascript ~/dotfiles/applescript/turnonkeyboardbacklight.scpt")
     end
 }, {
@@ -40,6 +41,7 @@ local watchedEvents = {{
     productName = "UHK 60 v2",
     vendorID = 7504,
     fn = function()
+        os.execute("defaults write com.apple.loginwindow DisableScreenLockImmediate -bool yes")
         os.execute("osascript ~/dotfiles/applescript/turnoffkeyboardbacklight.scpt")
     end
 }}
