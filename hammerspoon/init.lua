@@ -13,6 +13,16 @@ hs.hotkey.bind({"cmd"}, "pagedown", function()
     hs.eventtap.keyStroke({"cmd", "alt"}, "right")
 end)
 
+-- Rearrange tab left
+hs.hotkey.bind({"cmd, shift"}, "pageup", function()
+    hs.eventtap.keyStroke({"ctrl", "shift"}, "pageup")
+end)
+
+-- Rearrange tab right
+hs.hotkey.bind({"cmd, shift"}, "pagedown", function()
+    hs.eventtap.keyStroke({"ctrl", "shift"}, "pagedown")
+end)
+
 hs.hotkey.bind({}, "f13", function()
     os.execute("pmset displaysleepnow")
 end)
