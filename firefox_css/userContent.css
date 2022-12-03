@@ -1,0 +1,27 @@
+body:has(main .title-text, main #redirect-form) {
+  margin: 0;
+  margin-left: 2em;
+}
+
+main:has(.title-text, #redirect-form) {
+  background-color: #000000 !important;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+main:has(.title-text, #redirect-form) .title-text {
+  margin: 0;
+}
+
+main #redirect-form .button-container button {
+  border: none;
+  color: black !important;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
