@@ -1,0 +1,38 @@
+{
+	"options.result.active.styles.fgColor": [
+		[
+			true,
+			"#ff00bb"
+		]
+	],
+	"options.search.clearAfterFocus": [
+		true
+	],
+	"options.search.globalFocusKey": [
+		"Ctrl + Shift + F"
+	],
+	"options.panel.darkTheme": [
+		true
+	],
+	"options.advanced.hideHeader": [
+		""
+	],
+	"options.search.searchByTabIds": [
+		[
+			false,
+			false
+		]
+	],
+	"options.panel.hideFlags": [
+		false
+	],
+	"options.panel.matchCase": [
+		false
+	],
+	"options.panel.wholeWord": [
+		false
+	],
+	"options.panel.regExp": [
+		false
+	]
+}
