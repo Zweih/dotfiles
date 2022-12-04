@@ -25,3 +25,10 @@ main #redirect-form .button-container button {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+body:has(#shortcutKeys), #shortcutKeys {
+  visibility: hidden !important;
+  background-color: transparent !important;
+  width: 0px !important;
+  height: 0px !important;
+}
