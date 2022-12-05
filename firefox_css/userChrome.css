@@ -15,17 +15,21 @@ html {
   background-color: black;
 }
 
-toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action {
+toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action,
+toolbarbutton#_3c078156-979c-498b-8990-85f7987dd929_-browser-action {
   width: 0px !important;
   height: 0px !important;
   pointer-events: none !important;
 }
 
 toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action .toolbarbutton-text,
-toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action .toolbarbutton-badge-stack {
+toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action .toolbarbutton-badge-stack,
+toolbarbutton#_3c078156-979c-498b-8990-85f7987dd929_-browser-action .toolbarbutton-text,
+toolbarbutton#_3c078156-979c-498b-8990-85f7987dd929_-browser-action .toolbarbutton-badge-stack {
   padding: 0 !important;
 }
 
-toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action .toolbarbutton-icon {
+toolbarbutton#shortcutkey2url_enjoyxstudy_com-browser-action .toolbarbutton-icon,
+toolbarbutton#_3c078156-979c-498b-8990-85f7987dd929_-browser-action .toolbarbutton-icon {
   display: none !important;
 }
